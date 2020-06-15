@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <TextView
+        android:id="@+id/tv_actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:text="NotePad" />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_toEndOf="@+id/tv_actionbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/search_bar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:paddingStart="5dp"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:paddingEnd="36dp"/>
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="true">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="@color/cardview_dark_background" />
+
+        <TextView
+            android:id="@+id/ask_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/cardview_dark_background"
+            android:text="搜索"
+            android:textSize="15sp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</RelativeLayout>
