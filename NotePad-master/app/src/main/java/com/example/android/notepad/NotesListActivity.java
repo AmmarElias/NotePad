@@ -186,10 +186,7 @@ public class NotesListActivity extends ListActivity {
 
     @Override
     protected void onResume() {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new Date(System.currentTimeMillis()));
-        if(calendar.get(Calendar.MONTH) + 1 >= 6 && calendar.get(Calendar.DAY_OF_MONTH) >= 20)
-            finish();
+       
 
         super.onResume();
         searchBar.clearFocus();
